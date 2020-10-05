@@ -1,0 +1,7 @@
+/*
+      --- MIXINS & FUNCTIONS ---
+*/
+
+@mixin bg-gradient($color) {
+  background-image: linear-gradient(rgba($color, 1) 5%, rgba($color, 0) 95%);
+}

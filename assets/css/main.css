@@ -5,6 +5,9 @@
 /*   --- HUD colors ---   */
 /*   --- Grey values ---   */
 /*
+      --- MIXINS & FUNCTIONS ---
+*/
+/*
       --- BASE LAYOUT AND RESET ---
 */
 /*   --- Main navbar ---   */
@@ -73,12 +76,46 @@ body {
       --- HOME PAGE ---
 */
 .landing {
-  background-color: #f6eec8;
-  text-align: center;
+  height: 100%;
+  background: url("../img/landing_bg_mob.jpg") center bottom;
+  background-size: cover;
 }
 
-.landing-title {
-  font-style: italic;
+.landing-bg-gradient {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  min-height: 150px;
+  width: 100%;
+  background-image: linear-gradient(#0e0f1d 5%, rgba(14, 15, 29, 0) 95%);
+}
+
+.landing-logo {
+  position: relative;
+  top: 35%;
+  transform: translateY(-50%);
+}
+.landing-logo__img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*   --- Home Page Media Queries ---   */
+@media (orientation: landscape) and (max-width: 767px) {
+  .landing {
+    background-position: 0 calc(100% + 40vh);
+  }
+}
+@media (min-width: 768px) {
+  .landing {
+    background-image: url("../img/landing_bg_tab.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .landing {
+    background-image: url("../img/landing_bg_desk.jpg");
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
