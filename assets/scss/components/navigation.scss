@@ -33,3 +33,18 @@
   }
   }
 }
+
+/*   --- Main Footer ---   */
+.main-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 25px;
+  background-color: $dark-sky;
+  text-align: center;
+
+  &__copyright {
+    color: $grey-6;
+    font-size: 0.8rem;
+  }
+}

@@ -36,6 +36,20 @@
   text-shadow: 0 0 8px #f6eec8;
 }
 
+/*   --- Main Footer ---   */
+.main-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 25px;
+  background-color: #19191c;
+  text-align: center;
+}
+.main-footer__copyright {
+  color: #999999;
+  font-size: 0.8rem;
+}
+
 /*
       --- BASE LAYOUT AND RESET ---
 */
