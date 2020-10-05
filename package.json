@@ -1,0 +1,16 @@
+{
+  "name": "sta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/scss/main.scss:assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exipso/sta.git"
+  },
+  "author": "exipso",
+  "devDependencies": {
+    "sass": "^1.26.11"
+  }
+}

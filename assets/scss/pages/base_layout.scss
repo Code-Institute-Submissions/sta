@@ -1,0 +1,17 @@
+/*
+      --- BASE LAYOUT AND RESET ---
+*/
+html, body {
+  height: 100%;
+}
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: $grey-9 ;
+}
+.main-wrapper {
+  min-height: 100%;
+  // safe-zone: navbar, footer
+  padding: 65px 0 25px;
+  color: $dark-sky;
+}

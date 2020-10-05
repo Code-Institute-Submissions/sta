@@ -1,0 +1,38 @@
+/*
+      --- CUSTOM VARIABLES ---
+*/
+/*   --- BG colors ---   */
+/*   --- HUD colors ---   */
+/*   --- Grey values ---   */
+/*
+      --- BASE LAYOUT AND RESET ---
+*/
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #d8d8d8;
+}
+
+.main-wrapper {
+  min-height: 100%;
+  padding: 65px 0 25px;
+  color: #19191c;
+}
+
+/*
+      --- HOME PAGE ---
+*/
+.landing {
+  background-color: #f6eec8;
+  text-align: center;
+}
+
+.landing-title {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=main.css.map */
