@@ -7,6 +7,38 @@
 /*
       --- BASE LAYOUT AND RESET ---
 */
+/*   --- Main navbar ---   */
+.navbar-bg {
+  width: 100%;
+  height: 60px;
+  background-color: #19191c;
+}
+
+.navbar {
+  background-color: #19191c;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu {
+  padding: 0;
+}
+.main-menu__item {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-menu__item a:hover, .main-menu__item a:focus {
+  color: white;
+  text-shadow: 0 0 8px #f6eec8;
+}
+
+/*
+      --- BASE LAYOUT AND RESET ---
+*/
 html, body {
   height: 100%;
 }
