@@ -68,8 +68,13 @@ body {
 
 .main-wrapper {
   min-height: 100%;
-  padding: 65px 0 25px;
+  padding: 60px 0 25px;
   color: #19191c;
+}
+
+.title {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: capitalize;
 }
 
 /*
@@ -115,6 +120,34 @@ body {
 @media (min-width: 1200px) {
   .landing {
     background-image: url("../img/landing_bg_desk.jpg");
+  }
+}
+/*
+      --- ABOUT  PAGE ---
+*/
+.about-bg {
+  background: url("../img/about_bg_mob.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-us {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 540px;
+  margin: 30px auto;
+}
+
+/*   --- About Page Media Queries ---   */
+@media (min-width: 768px) {
+  .about-bg {
+    background-image: url("../img/about_bg_tab.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .about-bg {
+    background-image: url("../img/about_bg_desk.jpg");
   }
 }
 

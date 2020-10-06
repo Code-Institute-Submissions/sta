@@ -12,6 +12,10 @@ body {
 .main-wrapper {
   min-height: 100%;
   // safe-zone: navbar, footer
-  padding: 65px 0 25px;
+  padding: 60px 0 25px;
   color: $dark-sky;
+}
+.title {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: capitalize;
 }

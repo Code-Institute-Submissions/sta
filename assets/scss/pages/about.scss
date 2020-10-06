@@ -1,0 +1,31 @@
+/*
+      --- ABOUT  PAGE ---
+*/
+.about-bg {
+  background: url("../img/about_bg_mob.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding: {
+    left: 30px;
+    right: 30px;
+  }
+}
+
+.about-us {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.5);
+  max-width: 540px;
+  margin: 30px auto;
+}
+
+/*   --- About Page Media Queries ---   */
+@media (min-width: 768px) {
+  .about-bg {
+    background-image: url("../img/about_bg_tab.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-bg {
+    background-image: url("../img/about_bg_desk.jpg");
+  }
+}
