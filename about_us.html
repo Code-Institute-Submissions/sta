@@ -58,7 +58,7 @@
       <h1 class="title">Our Mission</h1>
     </header>
 
-    <div>
+    <article>
       <p>Sky trackers Association was founded in 2016 with one mission : spread passion for
         astronomy.
       <p>
@@ -76,9 +76,35 @@
       </p>
       <p>
         We do organize and host our own meetings but also private or scholar groups.Should you want plan a simple
-        visit or wish to organize specific arrangements, just fill the <a class="link" href="#contact-form">contact form below</a>.
+        visit or wish to organize specific arrangements, just fill the
+        <a class="link" href="#contact-form">contact form below</a>.
       </p>
-    </div>
+    </article>
+
+    <article>
+      <h2 class="title">Follow us</h2>
+
+      <p>
+        As part of our mission, we share as most as we can our activities, events we host, events we attend to, etc.
+        <br>Let's stay connected :
+      </p>
+
+      <div class="row">
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/tw_icon.png" alt="twitter" width="50">
+        </div>
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/lin_icon.png" alt="linkedin" width="50">
+        </div>
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/fb_icon.png" alt="facebook" width="50">
+        </div>
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/yt_icon.png" alt="youtube" width="50">
+        </div>
+      </div>
+    </article>
+
   </section>
 
   <section class="container contact-us">
@@ -87,40 +113,40 @@
     </header>
 
     <form id="contact-form">
-        <div class="form-group">
-          <label for="ctc-name" class="contact-form__label">Name :</label>
-          <input type="text" name="contactName" id="ctc-name" class="form-control contact-form__field"
-                 placeholder="Insert your Name" pattern="[A-Za-z]+" required>
-          <p class="contact-form__helper">Your name is required</p>
-        </div>
+      <div class="form-group">
+        <label for="ctc-name" class="contact-form__label">Name :</label>
+        <input type="text" name="contactName" id="ctc-name" class="form-control contact-form__field"
+               placeholder="Insert your Name" pattern="[A-Za-z]+" required>
+        <p class="contact-form__helper">Your name is required</p>
+      </div>
 
-        <div class="form-group">
-          <label for="ctc-organisation" class="contact-form__label">Organisation :</label>
-          <input type="text" name="organisationName" id="ctc-organisation" class="form-control contact-form__field"
-                 placeholder="Insert your school/company name if any">
-        </div>
+      <div class="form-group">
+        <label for="ctc-organisation" class="contact-form__label">Organisation :</label>
+        <input type="text" name="organisationName" id="ctc-organisation" class="form-control contact-form__field"
+               placeholder="Insert your school/company name if any">
+      </div>
 
-        <div class="form-group">
-          <label for="ctc-email" class="contact-form__label">Email :</label>
-          <input type="email" name="contactMail" id="ctc-email" class="form-control contact-form__field"
-                 placeholder="username@domain.net" pattern="[A-Za-z0-9._-]+@[A-Za-z0-9-._]+\.[A-Za-z]{2,11}" required>
-          <p class="contact-form__helper">A valid email is required</p>
-        </div>
+      <div class="form-group">
+        <label for="ctc-email" class="contact-form__label">Email :</label>
+        <input type="email" name="contactMail" id="ctc-email" class="form-control contact-form__field"
+               placeholder="username@domain.net" pattern="[A-Za-z0-9._-]+@[A-Za-z0-9-._]+\.[A-Za-z]{2,11}" required>
+        <p class="contact-form__helper">A valid email is required</p>
+      </div>
 
-        <div class="form-group">
-          <label for="ctc-message" class="contact-form__label">Message :</label>
-          <textarea name="contactMessage" id="ctc-message" class="form-control contact-form__field"
-                    placeholder="Write your query our feedback." maxlength="450" required></textarea>
-          <p class="contact-form__helper">450 characters max</p>
-        </div>
+      <div class="form-group">
+        <label for="ctc-message" class="contact-form__label">Message :</label>
+        <textarea name="contactMessage" id="ctc-message" class="form-control contact-form__field"
+                  placeholder="Write your query our feedback." maxlength="450" required></textarea>
+        <p class="contact-form__helper">450 characters max</p>
+      </div>
 
-        <button type="submit" class="btn btn-dark hud-title rounded-0">Send</button>
-      </form>
+      <button type="submit" class="btn btn-dark hud-title rounded-0">Send</button>
+    </form>
 
   </section>
 </main>
 
-<!-- modal feedback -->
+<!-- form modal feedback -->
 <div id="contact-form-feedback" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content rounded-0">
@@ -129,6 +155,21 @@
       </div>
       <div class="modal-body">
         <p>Many thanks for your interest. We'll be in touch shortly.</p>
+        <button type="button" class="btn btn-dark rounded-0 hud-title mt-3" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- social modal feedback -->
+<div id="social-feedback" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0">
+      <div class="modal-header border-0">
+        <h3 class="title">Sorry !</h3>
+      </div>
+      <div class="modal-body">
+        <p>Not connected yet.</p>
         <button type="button" class="btn btn-dark rounded-0 hud-title mt-3" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -144,6 +185,9 @@
     $('#contact-form').on('submit', function (e) {
       e.preventDefault();
       $('#contact-form-feedback').modal('show');
+    });
+    $('.about-us__social').on('click', function () {
+      $('#social-feedback').modal('show');
     });
   });
 </script>
