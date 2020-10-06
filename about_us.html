@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sky Trackers Association</title>
+
+  <link rel="icon" type="image/png" href="assets/img/sta_favicon.jpg">
+
+  <!-- CORE CSS -->
+  <!-- Bootstrap4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- CORE SCRIPTS -->
+  <!-- jQuery3x -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+  <!-- Bootstrap4 JS-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="navbar-bg fixed-top"></div>
+<nav class="navbar navbar-dark fixed-top">
+  <button class="navbar-toggler mx-auto border-0 mb-1" type="button" data-toggle="collapse" data-target="#main-menu"
+          aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="assets/img/sta_logo.png" height="30" alt="logo">
+  </button>
+  <div class="collapse navbar-collapse main-menu" id="main-menu">
+    <ul class="navbar-nav text-center">
+      <li class="nav-item main-menu__item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active main-menu__item">
+        <a class="nav-link" href="about_us.html">About Us<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="main-wrapper about-bg">
+
+  <section class="container about-us">
+    <header class="mb-3">
+      <h1 class="title">Our Mission</h1>
+    </header>
+
+    <article>
+      <p>Sky trackers Association was founded in 2016 with one mission : spread passion for
+        astronomy.
+      <p>
+        Since then our team of dedicated volunteers have organized over 200 events gathering adults, teenagers and
+        even
+        younger
+        curious minds sharing fascination for the night sky.<br>
+      </p>
+      <p>
+        Whether your are discovering or already an astronomer enthusiast you are welcome at our meetings to ask your
+        questions or share simply your discoveries. All are welcome !<br>
+        Thanks to our volunteers and partners we have material for you to discover the deep sky. We help young
+        astronomers chose and set their own material should they want to go a step further in tracking celestial
+        objects.
+      </p>
+      <p>
+        We do organize and host our own meetings but also private or scholar groups.Should you want plan a simple
+        visit or wish to organize specific arrangements, just fill the
+        <a class="link" href="#contact-form">contact form below</a>.
+      </p>
+    </article>
+
+    <article>
+      <h2 class="title">Follow us</h2>
+
+      <p>
+        As part of our mission, we share as most as we can our activities, events we host, events we attend to, etc.
+        <br>Let's stay connected :
+      </p>
+
+      <div class="row">
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/tw_icon.png" alt="twitter" width="50">
+        </div>
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/lin_icon.png" alt="linkedin" width="50">
+        </div>
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/fb_icon.png" alt="facebook" width="50">
+        </div>
+        <div class="col-3">
+          <img class="about-us__social" src="assets/img/icons/yt_icon.png" alt="youtube" width="50">
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="container contact-us">
+    <header class="mb-3">
+      <h1 class="title">Contact us</h1>
+    </header>
+
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="ctc-name" class="contact-form__label">Name :</label>
+        <input type="text" name="contactName" id="ctc-name" class="form-control contact-form__field"
+               placeholder="Insert your Name" pattern="[A-Za-z]+" required>
+        <p class="contact-form__helper">Your name is required</p>
+      </div>
+
+      <div class="form-group">
+        <label for="ctc-organisation" class="contact-form__label">Organisation :</label>
+        <input type="text" name="organisationName" id="ctc-organisation" class="form-control contact-form__field"
+               placeholder="Insert your school/company name if any">
+      </div>
+
+      <div class="form-group">
+        <label for="ctc-email" class="contact-form__label">Email :</label>
+        <input type="email" name="contactMail" id="ctc-email" class="form-control contact-form__field"
+               placeholder="username@domain.net" pattern="[A-Za-z0-9._-]+@[A-Za-z0-9-._]+\.[A-Za-z]{2,11}" required>
+        <p class="contact-form__helper">A valid email is required</p>
+      </div>
+
+      <div class="form-group">
+        <label for="ctc-message" class="contact-form__label">Message :</label>
+        <textarea name="contactMessage" id="ctc-message" class="form-control contact-form__field"
+                  placeholder="Write your query our feedback." maxlength="450" required></textarea>
+        <p class="contact-form__helper">450 characters max</p>
+      </div>
+
+      <button type="submit" class="btn btn-dark hud-title rounded-0">Send</button>
+    </form>
+
+  </section>
+</main>
+
+<!-- form modal feedback -->
+<div id="contact-form-feedback" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0">
+      <div class="modal-header border-0">
+        <h3 class="title">Thank you !</h3>
+      </div>
+      <div class="modal-body">
+        <p>Many thanks for your interest. We'll be in touch shortly.</p>
+        <button type="button" class="btn btn-dark rounded-0 hud-title mt-3" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- social modal feedback -->
+<div id="social-feedback" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content rounded-0">
+      <div class="modal-header border-0">
+        <h3 class="title">Sorry !</h3>
+      </div>
+      <div class="modal-body">
+        <p>Not connected yet.</p>
+        <button type="button" class="btn btn-dark rounded-0 hud-title mt-3" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="main-footer">
+  <span class="main-footer__copyright">©Sky Trackers Association, All Rights Reserved</span>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    $('#contact-form').on('submit', function (e) {
+      e.preventDefault();
+      $('#contact-form-feedback').modal('show');
+    });
+    $('.about-us__social').on('click', function () {
+      $('#social-feedback').modal('show');
+    });
+  });
+</script>
+
+</body>
+</html>

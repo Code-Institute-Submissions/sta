@@ -3,6 +3,7 @@
 */
 /*   --- BG colors ---   */
 /*   --- HUD colors ---   */
+/*   --- HUD Interactive colors ---   */
 /*   --- Grey values ---   */
 /*
       --- MIXINS & FUNCTIONS ---
@@ -68,8 +69,27 @@ body {
 
 .main-wrapper {
   min-height: 100%;
-  padding: 65px 0 25px;
+  padding: 60px 0 25px;
   color: #19191c;
+}
+
+.title {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: capitalize;
+}
+
+.hud-title {
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.link {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #0e0f1d;
+}
+.link:hover, .link:active {
+  color: #4181f1;
 }
 
 /*
@@ -115,6 +135,91 @@ body {
 @media (min-width: 1200px) {
   .landing {
     background-image: url("../img/landing_bg_desk.jpg");
+  }
+}
+/*
+      --- ABOUT  PAGE ---
+*/
+.about-bg {
+  background: url("../img/about_bg_mob.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about-us,
+.contact-us {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  max-width: 540px;
+  margin: 30px auto;
+}
+
+.about-us__social {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -10px rgba(14, 15, 29, 0);
+  transition: ease-in-out 0.3s;
+}
+.about-us__social:hover {
+  box-shadow: 0 5px 5px -5px #0e0f1d;
+}
+
+/*   --- Form ---   */
+.contact-form__label {
+  color: #333333;
+  font-size: 0.9rem;
+}
+.contact-form__helper {
+  padding-left: 10px;
+  color: #4c4c4c;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.contact-form__field {
+  border-radius: 0;
+  border: 1px solid transparent;
+  background-color: rgba(25, 25, 28, 0.5);
+  color: #cccccc;
+}
+.contact-form__field::placeholder {
+  color: #cccccc;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.contact-form__field:focus {
+  background-color: rgba(25, 25, 28, 0.5);
+  color: #cccccc;
+  border-color: #f6eec8;
+  box-shadow: 0 0 5px 0 #f6eec8 inset;
+}
+.contact-form__field:focus:invalid + .contact-form__helper {
+  color: #ba0707;
+}
+.contact-form__field:valid + .contact-form__helper {
+  opacity: 0;
+}
+
+.modal-content {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+/*   --- About Page Media Queries ---   */
+@media (min-width: 768px) {
+  .about-bg {
+    background-image: url("../img/about_bg_tab.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .about-bg {
+    background-image: url("../img/about_bg_desk.jpg");
   }
 }
 

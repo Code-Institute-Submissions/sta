@@ -1,0 +1,106 @@
+/*
+      --- ABOUT  PAGE ---
+*/
+.about-bg {
+  background: url("../img/about_bg_mob.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding: {
+    left: 30px;
+    right: 30px;
+  }
+}
+
+.about-us,
+.contact-us {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.65);
+  max-width: 540px;
+  margin: 30px auto;
+}
+
+.about-us__social {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -10px transparentize($deep-sky, 1);
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    box-shadow: 0 5px 5px -5px $deep-sky;
+  }
+}
+
+
+/*   --- Form ---   */
+.contact-form {
+
+  &__label {
+    color: $grey-2;
+    font-size: 0.9rem;
+  }
+
+  &__helper {
+    padding-left: 10px;
+    color: $grey-3;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  &__field {
+    border-radius: 0;
+    border: 1px solid transparent;
+    background-color: rgba($dark-sky, 0.5);
+    color: $grey-8;
+
+    &::placeholder {
+      color: $grey-8;
+      font-size: 0.8rem;
+	  font-style: italic;
+    }
+
+    &:focus {
+      background-color: rgba($dark-sky, 0.5);
+      color: $grey-8;
+      border-color: $hud-light-warm;
+      box-shadow: 0 0 5px 0 $hud-light-warm inset;
+
+      &:invalid {
+        + .contact-form__helper {
+          color: $hud-cta-error;
+        }
+      }
+    }
+
+    &:valid {
+      + .contact-form__helper {
+        opacity: 0;
+      }
+    }
+
+  }
+}
+
+.modal-content {
+  background-color: $grey-8;
+  color: $grey-2;
+}
+
+/*   --- About Page Media Queries ---   */
+@media (min-width: 768px) {
+  .about-bg {
+    background-image: url("../img/about_bg_tab.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-bg {
+    background-image: url("../img/about_bg_desk.jpg");
+  }
+}
