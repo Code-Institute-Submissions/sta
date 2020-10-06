@@ -150,7 +150,7 @@ body {
 .about-us,
 .contact-us {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.65);
   max-width: 540px;
   margin: 30px auto;
 }
@@ -200,10 +200,7 @@ body {
   box-shadow: 0 0 5px 0 #f6eec8 inset;
 }
 .contact-form__field:focus:invalid + .contact-form__helper {
-  color: #F15641;
-}
-.contact-form__field:not(:focus):invalid {
-  box-shadow: 0 0 5px 0 #F15641 inset;
+  color: #ba0707;
 }
 .contact-form__field:valid + .contact-form__helper {
   opacity: 0;
