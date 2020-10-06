@@ -10,11 +10,74 @@
   }
 }
 
-.about-us {
+.about-us,
+.contact-us {
   padding: 20px;
   background-color: rgba(255,255,255,0.5);
   max-width: 540px;
   margin: 30px auto;
+}
+
+
+/*   --- Form ---   */
+.contact-form {
+
+  &__label {
+    color: $grey-2;
+    //font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  &__helper {
+    padding-left: 10px;
+    color: $grey-3;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  &__field {
+    border-radius: 0;
+    border: 1px solid transparent;
+    background-color: rgba($dark-sky, 0.5);
+    color: $grey-8;
+
+    &::placeholder {
+      color: $grey-8;
+      font-size: 0.8rem;
+	  font-style: italic;
+    }
+
+    &:focus {
+      background-color: rgba($dark-sky, 0.5);
+      color: $grey-8;
+      border-color: $hud-light-warm;
+      box-shadow: 0 0 5px 0 $hud-light-warm inset;
+
+      &:invalid {
+        + .contact-form__helper {
+          color: $hud-cta-cancel;
+        }
+      }
+    }
+
+    &:not(:focus) {
+      &:invalid {
+        box-shadow: 0 0 5px 0 $hud-cta-cancel inset;
+      }
+    }
+
+    &:valid {
+      + .contact-form__helper {
+        opacity: 0;
+      }
+    }
+
+  }
+}
+
+.modal-content {
+  background-color: $grey-8;
+  color: $grey-2;
 }
 
 /*   --- About Page Media Queries ---   */

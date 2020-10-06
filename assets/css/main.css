@@ -3,6 +3,7 @@
 */
 /*   --- BG colors ---   */
 /*   --- HUD colors ---   */
+/*   --- HUD Interactive colors ---   */
 /*   --- Grey values ---   */
 /*
       --- MIXINS & FUNCTIONS ---
@@ -77,6 +78,20 @@ body {
   text-transform: capitalize;
 }
 
+.hud-title {
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.link {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #0e0f1d;
+}
+.link:hover, .link:active {
+  color: #4181f1;
+}
+
 /*
       --- HOME PAGE ---
 */
@@ -132,11 +147,55 @@ body {
   padding-right: 30px;
 }
 
-.about-us {
+.about-us,
+.contact-us {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   max-width: 540px;
   margin: 30px auto;
+}
+
+/*   --- Form ---   */
+.contact-form__label {
+  color: #333333;
+  font-size: 0.9rem;
+}
+.contact-form__helper {
+  padding-left: 10px;
+  color: #4c4c4c;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.contact-form__field {
+  border-radius: 0;
+  border: 1px solid transparent;
+  background-color: rgba(25, 25, 28, 0.5);
+  color: #cccccc;
+}
+.contact-form__field::placeholder {
+  color: #cccccc;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+.contact-form__field:focus {
+  background-color: rgba(25, 25, 28, 0.5);
+  color: #cccccc;
+  border-color: #f6eec8;
+  box-shadow: 0 0 5px 0 #f6eec8 inset;
+}
+.contact-form__field:focus:invalid + .contact-form__helper {
+  color: #F15641;
+}
+.contact-form__field:not(:focus):invalid {
+  box-shadow: 0 0 5px 0 #F15641 inset;
+}
+.contact-form__field:valid + .contact-form__helper {
+  opacity: 0;
+}
+
+.modal-content {
+  background-color: #cccccc;
+  color: #333333;
 }
 
 /*   --- About Page Media Queries ---   */

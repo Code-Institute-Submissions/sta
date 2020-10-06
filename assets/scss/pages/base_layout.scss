@@ -19,3 +19,16 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: capitalize;
 }
+.hud-title {
+  font-family: 'Saira Condensed', sans-serif;
+}
+.link {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 1rem;
+  text-decoration: underline;
+  color: $deep-sky;
+
+  &:hover, &:active {
+    color: $hud-cta-main;
+  }
+}
