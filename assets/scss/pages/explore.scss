@@ -1,3 +1,29 @@
 /*
       --- HOME PAGE ---
 */
+.explore {
+  background-color: black;
+  &__landing {
+    position: relative;
+    background: url("../img/explore_header_bg.jpg") fixed no-repeat;
+    background-position: center calc(50% - 100px);
+    background-size: cover;
+    height: 33vh;
+    min-height: 250px;
+    width: 100%;
+  }
+
+  &__intro {
+    background: linear-gradient(black, $dark-sky 55%, $deep-sky);
+    padding: 20px;
+    height: 60vh;
+    p {
+      max-width: 540px;
+      color: $grey-8;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+}

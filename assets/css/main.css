@@ -55,6 +55,26 @@
 }
 
 /*
+      --- BUTTONS ---
+*/
+.cta-btn {
+  background-color: #202b34;
+  border: 1px solid #334554;
+  border-radius: 0;
+  color: #999999;
+  font-size: 0.8em;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  transition: all ease-in-out 0.2s;
+}
+.cta-btn:hover, .cta-btn:focus {
+  background-color: black;
+  border: 1px solid #475f73;
+  color: white;
+}
+
+/*
       --- BASE LAYOUT AND RESET ---
 */
 html, body {
@@ -90,6 +110,15 @@ body {
 }
 .link:hover, .link:active {
   color: #4181f1;
+}
+
+.dark-fade-bottom {
+  background-image: linear-gradient(to top, black 5%, rgba(0, 0, 0, 0) 95%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
 }
 
 /*
@@ -225,5 +254,28 @@ body {
 /*
       --- HOME PAGE ---
 */
+.explore {
+  background-color: black;
+}
+.explore__landing {
+  position: relative;
+  background: url("../img/explore_header_bg.jpg") fixed no-repeat;
+  background-position: center calc(50% - 100px);
+  background-size: cover;
+  height: 33vh;
+  min-height: 250px;
+  width: 100%;
+}
+.explore__intro {
+  background: linear-gradient(black, #19191c 55%, #0e0f1d);
+  padding: 20px;
+  height: 60vh;
+}
+.explore__intro p {
+  max-width: 540px;
+  color: #cccccc;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*# sourceMappingURL=main.css.map */
