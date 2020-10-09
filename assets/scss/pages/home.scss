@@ -27,6 +27,13 @@
   }
 }
 
+.landing-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*   --- Home Page Media Queries ---   */
 @media (orientation: landscape) and (max-width: 767px) {
   .landing {

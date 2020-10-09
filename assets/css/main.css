@@ -76,6 +76,9 @@
 .cta-btn--small {
   padding: 0.5rem 1rem;
 }
+.cta-btn--large {
+  padding: 1rem 2rem;
+}
 
 .hud-btn {
   border-radius: 0;
@@ -184,6 +187,13 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.landing-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*   --- Home Page Media Queries ---   */
