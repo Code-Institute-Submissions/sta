@@ -431,5 +431,53 @@ body {
     background-image: url("../img/star_stripe_desk.jpg");
   }
 }
+/*
+      --- RESOURCES PAGE ---
+*/
+.resources-bg {
+  background: url("../img/resources_bg_mob.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.info-block {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 540px;
+  margin: 30px auto;
+}
+
+.resource {
+  max-width: 540px;
+  margin: 30px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 6px solid #0e0f1d;
+}
+.resource__name {
+  font-family: "Barlow Condensed", sans-serif;
+  border-bottom: 1px solid #0e0f1d;
+  padding: 10px 20px;
+}
+.resource__link {
+  padding-bottom: 10px;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+.resource:nth-of-type(2) {
+  border-color: #2f3362;
+}
+
+@media (min-width: 768px) {
+  .resources-bg {
+    background-image: url("../img/resources_bg_tab.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .resources-bg {
+    background-image: url("../img/resources_bg_desk.jpg");
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
