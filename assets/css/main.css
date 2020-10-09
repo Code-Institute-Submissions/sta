@@ -98,6 +98,12 @@
 /*
       --- BASE LAYOUT AND RESET ---
 */
+/*   --- RESET ---   */
+a:hover {
+  text-decoration: none;
+}
+
+/*   --- BASE LAYOUT ---   */
 html, body {
   height: 100%;
 }
@@ -128,6 +134,7 @@ body {
   font-size: 1rem;
   text-decoration: underline;
   color: #0e0f1d;
+  font-weight: bold;
 }
 .link:hover, .link:active {
   color: #4181f1;
