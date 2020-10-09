@@ -469,5 +469,20 @@
   <span class="main-footer__copyright">©Sky Trackers Association, All Rights Reserved</span>
 </footer>
 
+<script>
+  // Smooth scrolling
+  $('.hud-btn, .cta-btn').click(function (event) {
+    // check href points to an id
+    if (this.hash !== "") {
+      // prevents default anchor behavior & animate scroll
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500);
+    }
+  });
+</script>
+
 </body>
 </html>
