@@ -5,3 +5,10 @@
 @mixin bg-gradient($color) {
   background-image: linear-gradient(rgba($color, 1) 5%, rgba($color, 0) 95%);
 }
+
+@mixin console-bg($color1, $color2: $color1, $density: 1, $light: 0, $angle: 0deg) {
+  background-image: linear-gradient(
+                  $angle,
+                  rgba(lighten($color1, $light), $density) 5%,
+                  rgba(lighten($color2, $light), $density) 95%);
+}

@@ -14,7 +14,30 @@
 
   &:hover, &:focus {
     background-color: darken($bg-prim, 20%);
-    border: 1px solid lighten($bg-prim, 20%);
+    border-color: lighten($bg-prim, 20%);
     color: white;
+  }
+}
+
+.hud-btn {
+  border-radius: 0;
+  border: 1px solid $hud-light-warm;
+  background-color: $hud-light-warm;
+  font-family: "Saira Condensed", sans-serif;
+  color: $dark-sky;
+  padding: 2px 8px;
+  box-sizing: border-box;
+  transition: ease-in-out 0.2s;
+
+  &--disabled {
+    border-color: $grey-6;
+    background-color: $grey-6;
+    color: $grey-9;
+  }
+
+  &:hover, &:active, &:focus {
+    background-color: $dark-sky;
+    color: $hud-light-warm;
+    outline: none;
   }
 }

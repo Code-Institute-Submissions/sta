@@ -54,9 +54,9 @@
   </div>
 </nav>
 
-<main class="main-wrapper">
+<main class="main-wrapper explore-wrapper">
 
-  <header class="explore">
+  <header id="landing" class="explore">
     <div class="explore__landing">
       <div class="dark-fade-bottom"></div>
     </div>
@@ -66,9 +66,54 @@
       <p> There are billions of stars that we now know have their own planets orbiting around. But this one we call
         Solar System, we can reach and explore.</p>
       <p>This one is home !</p>
-      <button class="title cta-btn my-3">Start Exploration</button>
+      <a href="#sun">
+        <button class="cta-btn my-3">Start Exploration</button>
+      </a>
     </div>
   </header>
+
+  <div class="star-stripe"></div>
+
+  <!--
+        ****** SUN ******
+  -->
+  <section id="sun" class="console-wrapper">
+    <div class="console">
+      <header class="console__header">
+        <div class="hud-title hud-text">
+          <h1>Our Sun</h1>
+        </div>
+        <div class="hud-description hud-tag">
+          At the center of our Solar System, the sun casts its light and warmth on us from 150 millions of kms.
+          <br>
+          It is a G-type star also called yellow dwarfs. While the temperature at the surface raise up to 5600°C,
+          its core hits 15 millions °C.
+          <br>
+          The sun also rotates on itself in about 25 days.
+        </div>
+      </header>
+      <main class="console__media">
+        <figure>
+          <picture>
+            <source media="(min-width:1366px)" srcset="assets/img/explore/sun/sun_desk.jpg">
+            <source media="(min-width:768px)" srcset="assets/img/explore/sun/sun_tab.jpg">
+            <img src="assets/img/explore/sun/sun_mob.jpg" alt="Sun">
+          </picture>
+          <figcaption class="hud-text">The burning surface of the Sun and its flares</figcaption>
+        </figure>
+      </main>
+      <footer class="console__footer">
+        <div>
+          <span class="hud-tag hud-tag--outline hud-text">Star</span>
+          <span class="hud-tag hud-tag--outline hud-text">Yellow dwarf</span>
+        </div>
+        <div>
+          <a href="#landing"><button class="hud-btn">intro</button></a>
+          <a href="#"><button class="hud-btn">next</button></a>
+        </div>
+      </footer>
+    </div>
+  </section>
 
 </main>
 
