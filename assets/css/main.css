@@ -20,20 +20,14 @@
 
 .navbar {
   background-color: #19191c;
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.main-menu {
-  padding: 0;
+.main-menu .navbar-nav {
+  background: linear-gradient(#19191c, #202b34);
 }
 .main-menu__item {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.1rem;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .main-menu__item a:hover, .main-menu__item a:focus {
   color: white;

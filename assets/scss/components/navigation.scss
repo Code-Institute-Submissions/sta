@@ -9,23 +9,15 @@
 }
 .navbar {
   background-color: $dark-sky;
-  width: 260px;
-  margin: {
-    left: auto;
-    right: auto;
-  }
 }
 .main-menu {
-  padding: 0;
+  .navbar-nav {
+    background: linear-gradient($dark-sky, $bg-prim);
+  }
 
   &__item {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.1rem;
-    width: 50%;
-    margin: {
-      left: auto;
-      right: auto;
-    }
 
     a:hover, a:focus {
     color: white;
