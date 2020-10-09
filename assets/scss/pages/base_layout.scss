@@ -19,7 +19,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: capitalize;
 }
-.hud-title {
+.hud-text {
   font-family: 'Saira Condensed', sans-serif;
 }
 .link {
@@ -31,4 +31,12 @@ body {
   &:hover, &:active {
     color: $hud-cta-main;
   }
+}
+.dark-fade-bottom {
+  background-image: linear-gradient(to top, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 95%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
 }
