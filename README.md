@@ -44,18 +44,7 @@ distracting the young audience from the content and focus on the learning purpos
 
 **User Stories**
 
-- As Evan I want to know more about the moon cycles so I can appreciate better its changes every night.  
-
-- As Evan I want to learn about observation techniques to be able to pinpoint stars from a map by myself.
-
-- As Evan I want to learn about instruments setup so that I can enjoy deeper the night sky with my telescope.  
-
-- As Evan I want to find information about Jupiter's moons so that I can try to get a deeper knowledge about satellites 
-and compare with our Moon.
-
-
-- As Eleanor I want to introduce the solar system to my class for them to catch the bigger picture of life on earth and 
-how it is unique.  
+- As Evan I want to learn about planets of our solar system so that I can enjoy more watching the bright ones at night.  
 
 - As Eleanor I want to poke my students with an experience about what it is to study in astronomy.  
 
@@ -64,6 +53,9 @@ how it is unique.
 I've [sketched](./ux_documentation/sketches) few concepts that answer these main guidelines before building an 
 [animated wireframe prototype](https://xd.adobe.com/view/28ab82c9-8297-45c1-6aff-7a57d62f62a1-5e9a/?fullscreen) with AdobeXD. 
 PDF version [here](./ux_documentation/sta_prototyping.pdf).  
+
+__As this project is supposed to stay a simple frontend application, the scope was downscaled. However before this project came up
+I have planned already to write a data driven full-stack app, and I WILL !__
 
 [To top](#sky-trackers-association)
 
@@ -126,11 +118,11 @@ High quality photographs are necessary to engage young audience. They should be 
 - About page gives basic information on STA activities and social accounts to stay tuned (demo only to external links).  
 - Contact form on about page allows users to send queries, book events, etc (no backend for this demo).  
 - Explore page gives basic information on our solar system main objects in a very simplistic way.  
+- Ease scrolling on 'Explore' page for better UX.  
 
 ### Features to implement
 
 - Side navbar on Explore page to ease scrolling between sections.  
-- Ease scrolling for better UX.  
 
 ### Further development
 
@@ -203,6 +195,20 @@ the modal feedback to show if any of the following is not given:
 - Email with appropriate format.
 - Some characters in the message area.
 
+### Acceptance Tests
+
+- Evan's user story.  
+    1. The landing page offers a single call to action for the website core ' Explore and learn ' button.  
+    2. Evan is then on the main page with a brief intro and the ' explore ' button.  
+    He can click the button and use the prev/next buttons of each section (celestial bodies) or scroll down to 
+    any planet of the solar system.  
+
+- Eleanor's user story.
+    1. From the landing page I can click the menu icon to access the about page.  
+    2. After reading a brief intro of STA activities I can fill the contact form to ask for a scholar group visit.  
+    3. A message feedback appears to confirm my query was sent. (For this demo: no backend, no data treatment).  
+
+
 [To top](#sky-trackers-association)
 
 
@@ -234,7 +240,7 @@ the modal feedback to show if any of the following is not given:
 
 ### Content
 
-Content was written by myself with updated data from [NASA](https://www.nasa.gov/)
+Content was written by myself with updated data from [NASA](https://www.nasa.gov/).
 
 ### Media
 
