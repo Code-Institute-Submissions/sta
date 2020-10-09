@@ -5,8 +5,8 @@
   background-color: $bg-prim;
   border: 1px solid lighten($bg-prim, 10%);
   border-radius: 0;
-  color: $grey-6;
-  font-size: 0.8em;
+  color: $grey-8;
+  font-size: 0.7rem;
   letter-spacing: .15rem;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
@@ -16,6 +16,10 @@
     background-color: darken($bg-prim, 20%);
     border-color: lighten($bg-prim, 20%);
     color: white;
+  }
+
+  &--small {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -29,15 +33,21 @@
   box-sizing: border-box;
   transition: ease-in-out 0.2s;
 
-  &--disabled {
-    border-color: $grey-6;
-    background-color: $grey-6;
-    color: $grey-9;
-  }
-
   &:hover, &:active, &:focus {
     background-color: $dark-sky;
     color: $hud-light-warm;
     outline: none;
+  }
+
+  &--disabled {
+    border-color: $grey-6;
+    background-color: $grey-6;
+    color: $grey-9;
+
+    &:hover {
+      border-color: $grey-6;
+      background-color: $grey-6;
+      color: $grey-9;
+    }
   }
 }
