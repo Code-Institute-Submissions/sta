@@ -1,6 +1,13 @@
 /*
       --- BASE LAYOUT AND RESET ---
 */
+
+/*   --- RESET ---   */
+a:hover {
+  text-decoration: none;
+}
+
+/*   --- BASE LAYOUT ---   */
 html, body {
   height: 100%;
 }
@@ -27,6 +34,7 @@ body {
   font-size: 1rem;
   text-decoration: underline;
   color: $deep-sky;
+  font-weight: bold;
 
   &:hover, &:active {
     color: $hud-cta-main;

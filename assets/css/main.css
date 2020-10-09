@@ -61,8 +61,8 @@
   background-color: #202b34;
   border: 1px solid #334554;
   border-radius: 0;
-  color: #999999;
-  font-size: 0.8em;
+  color: #cccccc;
+  font-size: 0.7rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
@@ -72,6 +72,9 @@
   background-color: black;
   border-color: #475f73;
   color: white;
+}
+.cta-btn--small {
+  padding: 0.5rem 1rem;
 }
 
 .hud-btn {
@@ -84,20 +87,31 @@
   box-sizing: border-box;
   transition: ease-in-out 0.2s;
 }
-.hud-btn--disabled {
-  border-color: #999999;
-  background-color: #999999;
-  color: #d8d8d8;
-}
 .hud-btn:hover, .hud-btn:active, .hud-btn:focus {
   background-color: #19191c;
   color: #f6eec8;
   outline: none;
 }
+.hud-btn--disabled {
+  border-color: #999999;
+  background-color: #999999;
+  color: #d8d8d8;
+}
+.hud-btn--disabled:hover {
+  border-color: #999999;
+  background-color: #999999;
+  color: #d8d8d8;
+}
 
 /*
       --- BASE LAYOUT AND RESET ---
 */
+/*   --- RESET ---   */
+a:hover {
+  text-decoration: none;
+}
+
+/*   --- BASE LAYOUT ---   */
 html, body {
   height: 100%;
 }
@@ -128,6 +142,7 @@ body {
   font-size: 1rem;
   text-decoration: underline;
   color: #0e0f1d;
+  font-weight: bold;
 }
 .link:hover, .link:active {
   color: #4181f1;
