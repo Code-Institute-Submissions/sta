@@ -1,0 +1,55 @@
+/*
+      --- RESOURCES PAGE ---
+*/
+.resources-bg {
+  background: url("../img/resources_bg_mob.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding: {
+    left: 30px;
+    right: 30px;
+  }
+}
+
+.info-block  {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.7);
+  max-width: 540px;
+  margin: 30px auto;
+}
+
+.resource {
+  max-width: 540px;
+  margin: 30px auto;
+  padding: {
+    left: 10px;
+    right: 10px;
+  }
+  border-left: 6px solid $deep-sky;
+
+  &__name {
+    font-family: "Barlow Condensed", sans-serif;
+    border-bottom: 1px solid $deep-sky;
+    padding: 10px 20px;
+  }
+
+  &__link {
+    padding-bottom: 10px;
+    font-family: "Saira Condensed", sans-serif;
+  }
+}
+// Introduce color changes in resource list
+.resource:nth-of-type(2) {
+  border-color: lighten($deep-sky, 20%);
+}
+
+@media (min-width: 768px) {
+  .resources-bg {
+      background-image: url("../img/resources_bg_tab.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .resources-bg {
+      background-image: url("../img/resources_bg_desk.jpg");
+  }
+}
